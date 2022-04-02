@@ -41,3 +41,30 @@ console.log(mapExample);
 console.log(filterExample);
 console.log(reduceExample);
 console.log(reduceArrayExample);
+
+//Falsey Values
+/** Bolean false
+ *
+ * undefined
+ * false
+ * empty string ''
+ * zero number 0
+ *
+ *
+ */
+
+const ejemplo1 = undefined;
+const ejemplo2 = null;
+const ejemplo3 = NaN;
+const ejemplo4 = 0;
+const ejemplo5 = "";
+const ejemplo6 = false;
+const ejemplo7 = 1;
+
+console.log(!!ejemplo1);
+console.log(!!ejemplo2);
+console.log(!!ejemplo3);
+console.log(!!ejemplo4);
+console.log(!!ejemplo5);
+console.log(!!ejemplo6);
+console.log(!!ejemplo7);
