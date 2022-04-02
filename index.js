@@ -16,4 +16,28 @@ console.log(example3, " ---- ", example4);
 /** with non-primitive data types you are passing values by reference. The only way around this is to use the spread operator so that you are actually just making a copy of that value instead of doing a direct reference.  */
 
 //map filter reduce also called higher order functions
-const prices = [1, 2, 3, 10];
+
+const prices = [1, 2, 3, 10, 20, 30];
+
+//map example
+const mapExample = prices.map((value) => value + 1);
+//filter example
+const filterExample = prices.filter((value) => value < 10);
+//reduce example
+const reduceExample = prices.reduce((total, current) => {
+  return (total += current);
+}, 0);
+//map + filter using reduce example
+const reduceArrayExample = prices.reduce((accumulator, value) => {
+  const newValue = value + 1;
+  if (newValue <= 20) {
+    accumulator.push(newValue);
+  }
+  return accumulator;
+}, []);
+
+console.log(prices);
+console.log(mapExample);
+console.log(filterExample);
+console.log(reduceExample);
+console.log(reduceArrayExample);
