@@ -68,3 +68,19 @@ console.log(!!ejemplo4);
 console.log(!!ejemplo5);
 console.log(!!ejemplo6);
 console.log(!!ejemplo7);
+
+/**
+ *  The THIS keywords
+ * In the global execution context (outside of any function), this refers to the global object whether in strict mode or not.
+ *
+ *
+ *  */
+// In web browsers, the window object is also the global object:
+console.log(this === window); // true
+
+a = 37;
+console.log(window.a); // 37
+
+this.b = "MDN";
+console.log(window.b); // "MDN"
+console.log(b); // "MDN"
