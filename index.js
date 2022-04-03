@@ -76,11 +76,23 @@ console.log(!!ejemplo7);
  *
  *  */
 // In web browsers, the window object is also the global object:
-console.log(this === window); // true
+//console.log(this === window); // true
 
 a = 37;
-console.log(window.a); // 37
+//console.log(window.a); // 37
 
 this.b = "MDN";
-console.log(window.b); // "MDN"
-console.log(b); // "MDN"
+//console.log(window.b); // "MDN"
+//console.log(b); // "MDN"
+
+// == vs ===
+/**
+ * == checks for value only  "loosly equals"
+ * === checks for type and value "strictly equals"
+ */
+const loosly = "5";
+const strict = 5;
+//Only checking for value so they are equal
+console.log(loosly == strict);
+//Checking for both value and data type so they are not equal
+console.log(loosly === strict);
