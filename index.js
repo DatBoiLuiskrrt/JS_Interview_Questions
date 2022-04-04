@@ -112,3 +112,15 @@ console.log(typeof total);
 console.log(typeof String(5));
 console.log(typeof Boolean(0));
 console.log(typeof Number("5"));
+
+/**
+ * typeof operator
+ * will check the type of the data you are passing,
+ *
+ * For arrays use isArray([])
+ *
+ *
+ */
+console.log(typeof [1, 2, 3] === "object");
+console.log(Array.isArray([2, 3, 4, 5, 6]));
+console.log(Array.isArray({}));
