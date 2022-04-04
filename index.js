@@ -117,10 +117,29 @@ console.log(typeof Number("5"));
  * typeof operator
  * will check the type of the data you are passing,
  *
- * For arrays use isArray([])
+ * For arrays use Array.isArray([])
  *
  *
  */
 console.log(typeof [1, 2, 3] === "object");
 console.log(Array.isArray([2, 3, 4, 5, 6]));
 console.log(Array.isArray({}));
+
+/**
+ * delete
+ * Allows us to delete a property of an object
+ * Should be avoided using the delete keyboard because it could crash the application you should know what kind of data you have in your data model. You end up creating a very fragile application and often times you will see lint setting typically telling you to avoid it.
+ *
+ */
+
+const user = {
+  firstName: "Luis",
+  middleName: "Angel",
+  lastName: "Hernandez",
+  nickname: "Coding God",
+};
+delete user.firstName;
+//if you want to deleter instead of deleting entire property just set the value to an empty string
+//like this user.fistName = ''
+console.log(user.hasOwnProperty("firstName"));
+console.log(user);
