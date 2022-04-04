@@ -96,3 +96,19 @@ const strict = 5;
 console.log(loosly == strict);
 //Checking for both value and data type so they are not equal
 console.log(loosly === strict);
+//The reason we want to always use triple equals is to aviod bugs
+
+/** Coercion
+ *
+ * Take some numbers and add a string, what happens?
+ *Nubers get concatenated to strings
+ */
+//Implicit coercion
+const total = 2 + 3 + "7";
+console.log(total);
+console.log(typeof total);
+
+//Explicit coercion
+console.log(typeof String(5));
+console.log(typeof Boolean(0));
+console.log(typeof Number("5"));
