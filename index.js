@@ -202,3 +202,38 @@ console.log(arr2);
 function add5(val) {
   return val + 5;
 }
+
+/**
+ *
+ * Closure
+ * A functions that returns a function for the purpose of hiding a private variable
+ *
+ */
+function add1() {
+  let counter = 0;
+
+  counter++;
+
+  return counter;
+}
+
+const ad1 = (function () {
+  let counter = 0;
+  return function () {
+    counter++;
+    return counter;
+  };
+})();
+
+console.log(add1());
+console.log(add1());
+console.log(add1());
+
+console.log(ad1());
+console.log(ad1());
+console.log(ad1());
+/**
+ *  The difference is that with the iffy the cariable counter is able to stored in memory
+ *
+ *
+ *  */
