@@ -186,3 +186,19 @@ const add2 = function (num1, num2) {
 };
 
 console.log(add2(5, 5));
+
+/**
+ *
+ * Callbacks
+ * also called higher order functions
+ * functions we are passing that are later on being called
+ *A functions that is passed into another function that we are able to later on call upon it
+ */
+const arr = [1, 2, 3, 4, 5];
+const arr2 = arr.map((val) => val + 5);
+
+console.log(arr2);
+
+function add5(val) {
+  return val + 5;
+}
