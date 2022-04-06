@@ -166,3 +166,23 @@ for (let property in user2) {
   console.log(user2[property]);
   console.log(property);
 }
+
+/**
+ *
+ *
+ * Anonymous functions
+ *
+ *
+ */
+//standard function
+function add(num1, num2) {
+  return num1 + num2;
+}
+
+console.log(add(5, 5));
+
+const add2 = function (num1, num2) {
+  return num1 + num2;
+};
+
+console.log(add2(5, 5));
