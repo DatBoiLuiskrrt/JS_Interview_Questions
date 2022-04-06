@@ -143,3 +143,26 @@ delete user.firstName;
 //like this user.fistName = ''
 console.log(user.hasOwnProperty("firstName"));
 console.log(user);
+
+/**
+ *
+ * Object Notations
+ * Describe both dot notation and bracket notation
+ *
+ */
+
+const user2 = {
+  firstName: "Luis",
+  middleName: "Angel",
+  lastName: "Hernandez",
+  nickname: "Coding God",
+};
+
+console.log(user2.firstName);
+console.log(user2["firstName"]);
+
+//you may use bracket notation when using For Loops as a way to interact with the values of an object
+for (let property in user2) {
+  console.log(user2[property]);
+  console.log(property);
+}
