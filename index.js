@@ -259,8 +259,8 @@ while (array4.length > 0) {
   array4.pop();
 }
 
-while (array4.length > 0) {
-  array5.unshift();
+while (array5.length > 0) {
+  array5.shift();
 }
 
 console.log(array1);
