@@ -302,3 +302,15 @@ const example222 = example.map((val) => {
 console.log(example);
 console.log(example222);
 console.log(badExample);
+
+//undefined vs null
+//what is the difference between undefined and null?
+//undefined means a variable has not been defined a value
+//null is a defined value -has yet to have a value
+//undeclared means that it doesn't even exist
+
+const user1 = {};
+const user22 = null;
+console.log(user1);
+console.log(user1.firstName);
+console.log(user22);
