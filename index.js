@@ -288,3 +288,17 @@ function solution(numbers) {
   }
   return solution;
 }
+
+//Create Array
+const example = [1];
+//easiest way
+const badExample = new Array();
+//bad way of doing it
+
+//mapping through an array
+const example222 = example.map((val) => {
+  return val + 1;
+});
+console.log(example);
+console.log(example222);
+console.log(badExample);
