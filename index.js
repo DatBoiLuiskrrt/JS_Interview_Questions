@@ -330,3 +330,19 @@ class Circle {}
 const circle = new Circle();
 console.log(circle instanceof Circle);
 console.log(circle instanceof Object);
+
+//what is an iife
+//immeadetily invoked function expression
+//mostly used when jquery came about used so that they will be initialized when the project starts
+const result = (function () {
+  const init = {
+    id: 0,
+    methods: {
+      call() {
+        return;
+      },
+    },
+  };
+  return init;
+})();
+console.log(result);
