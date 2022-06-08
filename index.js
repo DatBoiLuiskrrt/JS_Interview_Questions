@@ -346,3 +346,13 @@ const result = (function () {
   return init;
 })();
 console.log(result);
+
+//How you maintain state in your local application
+const user11 = JSON.stringify({
+  firstName: "Luis",
+  lastName: "Hernandez",
+});
+
+// localStorage.setItem("user", user);
+
+console.log(JSON.parse(localStorage.getItem("user")));
