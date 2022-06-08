@@ -314,3 +314,9 @@ const user22 = null;
 console.log(user1);
 console.log(user1.firstName);
 console.log(user22);
+
+//0.1 + 0.2
+//what do you get when you add those two?
+//How math is a little wonky in JavaScript
+console.log(0.1 + 0.2);
+console.log((0.2 + 0.1).toFixed(1));
