@@ -320,3 +320,13 @@ console.log(user22);
 //How math is a little wonky in JavaScript
 console.log(0.1 + 0.2);
 console.log((0.2 + 0.1).toFixed(1));
+
+//instanceOf
+//is there to find out what the class is for an object
+
+console.log("hello world" instanceof String);
+
+class Circle {}
+const circle = new Circle();
+console.log(circle instanceof Circle);
+console.log(circle instanceof Object);
