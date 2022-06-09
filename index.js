@@ -354,5 +354,3 @@ const user11 = JSON.stringify({
 });
 
 // localStorage.setItem("user", user);
-
-console.log(JSON.parse(localStorage.getItem("user")));
